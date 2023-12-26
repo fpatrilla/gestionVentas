@@ -1,0 +1,155 @@
+
+.estado.Pendiente {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: red !important;
+}
+.estado.Pagado {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: gray !important;
+}
+
+.estado.Presupuesto {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: #ffc107 !important;
+}
+
+.estado.Reparando {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: rgb(128, 62, 0) !important;
+}
+.estado.Reparado {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: rgb(0, 128, 107) !important;
+}
+
+.estado.No Reparado {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: rgb(0, 128, 107) !important;
+}
+.estado.Entregado {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: gray !important;
+}
+
+.estadoCheq.Depositado {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: gray !important;
+}
+
+.estadoCheq.Endosado {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: gray !important;
+}
+.estadoCheq.Pendiente {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: red !important;
+}
+
+.estado.Repuesto {
+  color: white !important;
+  font-weight: bold !important;
+  background-color: rgb(0, 72, 255) !important;
+}
+
+.formHead {
+  margin-top: 11px;
+  margin-left: 6%;
+  width: 90%;
+  border: 1px solid;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-color: #969ea5;
+  border-radius: 30px 30px 0px 0px;
+  padding-left: 12%;
+}
+
+.formbody {
+  margin-top: 11p;
+  margin-left: 6%;
+  width: 90%;
+  border: 1 px solid;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-color: #969ea5;
+  border-radius: 0px 0px 30px 30px;
+  padding-left: 12%;
+}
+
+.boton-rojo{
+  
+  background-color: white !important;
+  color: #dc3545 !important;
+  border: 1px solid !important;
+ 
+}
+.boton-gris{
+  
+  background-color: white !important;
+  color: #6c757d !important;
+  border: 1px solid !important;
+ 
+}
+.boton-negro{
+  
+  background-color: white !important;
+  color: #373b3e !important;
+  border: 1px solid !important;
+ 
+}
+
+.boton-repuesto{
+  
+  background-color: white !important;
+  color: rgb(0, 72, 255) !important ;
+  border: 1px solid !important;
+ 
+}
+
+.boton-presupuesto{
+  
+  background-color: white !important;
+  color: #ffc107 !important ;
+  border: 1px solid !important;
+ 
+}
+.boton-reparado{
+  
+  background-color: white !important;
+  color: #157347 !important ;
+  border: 1px solid !important;
+ 
+}
+
+
+.boton-entregados{
+  
+  background-color: white !important;
+  color: #6c757d !important ;
+  border: 1px solid !important;
+ 
+}
+
+.boton-reparando{
+  
+  background-color: rgb(128, 62, 0) !important ;
+  color:white !important ;
+  border: 1px solid !important;
+ 
+}
+.boton-reparando1{
+  
+  background-color: white !important;
+  color: rgb(128, 62, 0) !important ;
+  border: 1px solid !important;
+ 
+}

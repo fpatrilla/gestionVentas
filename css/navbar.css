@@ -1,0 +1,77 @@
+/* Estilos para el menú lateral */
+#sidebar {
+height: 100%;
+  position: fixed;
+  width: 170px;
+  background-color: #121213;
+  border-right: 1px solid #121213;
+  border-radius: 0px 0px 100px 0px;
+  color: white;
+  top: 0px;
+
+}
+
+  #sidebar .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #121213;
+    color: white;
+    width: 100%;
+  }
+  
+  #sidebar ul.components {
+    padding: 0px 0;
+   
+  }
+  
+  #sidebar ul p {
+    padding: 10px;
+    color: #121213;
+    font-size: 1.1em;
+    display: block;
+  }
+  
+  #sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #121213;
+  }
+  
+  #sidebar ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Estilos para el contenido */
+  #content {
+    margin-left: 162px;
+    padding: 20px;
+    padding-top: 5%;
+  }
+  .font-bold {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .up {
+    padding: 22px;
+    text-align: center;
+    background-color: #121213;
+    color: white;
+    width: 100%;
+    height: 70px;
+    margin-top: -16px;
+    position: fixed;
+    border-radius: 0px 0px 18px 0px;
+  }
+  
+  .linkNav {
+    color: white !important;
+    text-decoration: none;
+  }
+  .linkNav:active,
+  .linkNav:focus,
+  .linkNav:visited {
+    background-color: rgba(202, 202, 202, 0.808);
+  }
+  

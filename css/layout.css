@@ -1,0 +1,101 @@
+.box-pendientes {
+  border: "1px solid" !important;
+  border-radius: 30px !important;
+  color: white !important;
+  background-color: #dc3545 !important;
+  padding: 11px !important;
+  font-size: 20px !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  margin: auto !important;
+  height: 90px !important;
+}
+
+.box-dolar {
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 8px;
+  background-color: #079a7fb0;
+  margin-right: 5px;
+  color: white;
+  background-color: #079a7fb0;
+  height: 70px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.box-index {
+  text-decoration: none !important;
+  color: white !important;
+  height: 120px !important;
+  width: 120px !important;
+}
+.box-index1 {
+  border-radius: 30px !important;
+  margin: 1% !important;
+}
+
+.boxh2 {
+  text-decoration: none;
+  color: white;
+  text-decoration-line: none;
+}
+
+.iconhead {
+  text-decoration: none;
+
+  height: 60px !important;
+  width: 60px !important;
+  margin-left: 10px !important;
+}
+
+.company {
+  display: flex !important;
+  margin-left: 3% !important;
+  border: 1px solid !important;
+  border-radius: 30px !important;
+  border-block-color: #adb5bd !important;
+  background-color: #e9ecef !important;
+  padding: 30px !important;
+}
+
+.article {
+  margin-top: 10px !important;
+  margin-left: 26% !important;
+  width: 50% !important;
+  border: 1px solid !important;
+  padding: 30px !important;
+  background-color: #e9ecef !important;
+  border-color: #f5f5f5 !important;
+  border-radius: 30px !important;
+  text-align: center !important;
+  margin: auto !important;
+  border-block-color: #adb5bd !important;
+}
+.client {
+  margin-top: 10px !important;
+  margin-left: 26% !important;
+  width: 50% !important;
+  border: 1px solid !important;
+  padding: 30px !important;
+  padding-left: 50px !important;
+  background-color: #e9ecef !important;
+  border-color: #f5f5f5 !important;
+  border-radius: 30px !important;
+
+  margin: auto !important;
+  border-block-color: #adb5bd !important;
+}
+
+.technicalreport {
+  display: flex !important;
+  margin-top: 11px !important;
+  margin-left: 2% !important;
+  width: 90% !important;
+  border: 1px solid !important;
+  padding: 10px !important;
+  background-color: #f5f5f5 !important;
+  border-color: #6c757d !important;
+  border-radius: 30px 30px 0px 0px !important;
+  border-block-color: #adb5bd !important;
+}

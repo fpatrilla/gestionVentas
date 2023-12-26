@@ -1,0 +1,29 @@
+.login1 {
+  width: 60% !important;
+ margin-left: 12%;
+ margin-top: 20px ;
+  padding: 6px !important;
+  background-color: #8080804f !important;
+}
+
+.login2 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 30px !important;
+  background-color: #f8f9fa !important;
+  max-width: 100% !important;
+}
+
+.box-left{
+  align-items: "center" !important;
+   width:50% !important; 
+
+}
+
+.box-right{
+  border-left: "1px solid #dee2e6" !important;
+   padding: 20px !important;
+   width: 60% !important; 
+}
