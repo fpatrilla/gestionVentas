@@ -52,14 +52,7 @@ export default function NewSale(companys) {
     setTarjetModalIsOpen(false);
   };
 
-  const openCurrentAccount = () => {
-    setCurrentAccountModalIsOpen(true);
-  };
-
-  const closeCurrentAccount = () => {
-    setCurrentAccountModalIsOpen(false);
-  };
-
+  
   return (
     <div>
       <div style={{ marginBottom: "1%" }}>
@@ -72,16 +65,7 @@ export default function NewSale(companys) {
 
       <div className="container text-center" style={{ margin: "1%" }}>
         <div className="row">
-          <div className="col-12">
-            <button className="btn btn-secondary float-start">
-              <Link
-                href="/nuevo"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <ArrowBackIcon />
-              </Link>
-            </button>
-          </div>
+    
 
           <div className="col box-index1 btn btn-danger">
             <Link href="/newSaleArticle" style={{ textDecoration: "none" }}>
@@ -106,10 +90,7 @@ export default function NewSale(companys) {
             <CreditCardIcon className="box-index" onClick={openTarjetModal} />
             <h2 className="boxh2">Tarjeta Credito</h2>
           </div>
-          <div className="col box-index1 btn btn-info">
-            <EditNoteIcon className="box-index" onClick={openCurrentAccount} />
-            <h2 className="boxh2">Cuenta Corriente</h2>
-          </div>
+        
         </div>
       </div>
       <div></div>
@@ -130,11 +111,7 @@ export default function NewSale(companys) {
         closeModal={closeCheqModal}
         {...companys}
       />
-      <CurrentAccountModal
-        isOpen={CurrentAccountModalIsOpen}
-        closeModal={closeCurrentAccount}
-        {...companys}
-      />
+    
     </div>
   );
 }

@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>SoftGestion</title>
+        <title>Gestion Ventas</title>
       </Head>
       <div className="wrapper" >
         <Nav />

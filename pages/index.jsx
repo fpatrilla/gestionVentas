@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import dbConnect from "../lib/dbConnect";
-import Orden from "../models/Orden";
+
 
 // material icons
 
 import StoreIcon from "@mui/icons-material/Store";
 import Link from "next/link";
-import ListAltIcon from "@mui/icons-material/ListAlt";
-import AddIcon from '@mui/icons-material/Add';
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 
-export default function Index({ ordens, isLoggedIn, username }) {
+
+export default function Index({  isLoggedIn, username }) {
   const [blueData, setBlueData] = useState([]);
   const [oficialData, setOficialData] = useState([]);
   const [countPendientes, setCountPendientes] = useState(0);
@@ -64,11 +64,9 @@ export default function Index({ ordens, isLoggedIn, username }) {
     fetchData();
     fetchDataOficial();
 
-    const countPendientes = ordens.filter(
-      (orden) => orden.estado === "Pendiente"
-    ).length;
+   
 
-    setCountPendientes(countPendientes);
+
   }, []);
 
   return (
@@ -76,12 +74,9 @@ export default function Index({ ordens, isLoggedIn, username }) {
       <div>
         <div style={{ display: "flex" }}>
           <div style={{ marginLeft: "5%" }}>
-            <img src="./LogoNavBar.png" alt="login form" width={90} />
+            <h1>Punto de Ventas</h1>
           </div>
-          <div className="box-pendientes">
-            <div>Ordenes Pendientes</div>
-            <h3>{countPendientes}</h3>
-          </div>
+         
           <div className="box-dolar" style={{ marginLeft: "auto" }}>
             <div>Dolar Oficial</div>
             <div>Compra: ${oficialData.compra}</div>
@@ -111,21 +106,13 @@ export default function Index({ ordens, isLoggedIn, username }) {
               className="col btn btn-primary"
               style={{ margin: "1%", borderRadius: "30px" }}
             >
-              <Link href="/ordenes" style={{ textDecoration: "none" }}>
-                <ListAltIcon className="box-index" />
-                <h2 className="boxh2">Ordenes</h2>
+              <Link href="/newSale" style={{ textDecoration: "none" }}>
+                <LocalOfferIcon className="box-index" />
+                <h2 className="boxh2">Nuevo</h2>
               </Link>
             </div>
-            <div
-              className="col btn btn-secondary"
-              style={{ margin: "1%", borderRadius: "30px" }}
-            >
-              <Link href="/newOrden" style={{ textDecoration: "none" }}>
-                <span ><AddIcon className="box-index" /></span>
-                <ListAltIcon className="box-index" />
-                <h2 className="boxh2">Nueva Orden</h2>
-              </Link>
-            </div>
+           
+         
           </div>
           <div></div>
           <div></div>
@@ -138,30 +125,10 @@ export default function Index({ ordens, isLoggedIn, username }) {
 export async function getServerSideProps(context) {
   await dbConnect();
 
-  const result = await Orden.find({});
-  const ordens = result.map((doc) => {
-    const orden = doc.toObject();
-    orden._id = orden._id.toString();
-
-    const createdAt = new Date(orden.createdAt);
-    const year = createdAt.getFullYear();
-    const month = createdAt.getMonth() + 1;
-    const day = createdAt.getDate();
-
-    const exitAt = new Date(orden.exitAt);
-    const exitYear = exitAt.getFullYear();
-    const exitMonth = exitAt.getMonth() + 1;
-    const exitDay = exitAt.getDate();
-
-    orden.createdAt = `${day}-${month}-${year}`;
-
-    orden.exitAt = `${exitDay}-${exitMonth}-${exitYear}`;
-
-    return orden;
-  });
+ 
   // Use useRequireAuth to get the authenticated user
   const isLoggedIn = !!context.req.cookies.token;
   const username = context.req.cookies.username || null;
 
-  return { props: { ordens, isLoggedIn, username } };
+  return { props: {  isLoggedIn, username } };
 }

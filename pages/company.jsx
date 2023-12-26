@@ -100,6 +100,7 @@ export default function CompanyPage({ companys }) {
           ))}
         </div>
       </div>
+      
     </div>
   );
 }

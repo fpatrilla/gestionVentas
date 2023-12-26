@@ -72,10 +72,10 @@ function Nav() {
       <nav id="sidebar" style={{ backgroundColor: "343a40" }}>
         <span style={{ marginTop: "-10px" }}>
           <img
-            src={imageSrc} // Utilizar el estado imageSrc para la fuente de la imagen
+            src={imageSrc} 
             alt="login form"
-            width={180}
-            height={180}
+            width={170}
+            height={170}
             style={{ marginTop: "-22px" }}
           />
         </span>
@@ -94,15 +94,11 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link className="linkNav" href="/nuevo">
+            <Link className="linkNav" href="/newSale">
               Nuevo
             </Link>
           </li>
-          <li>
-            <Link className="linkNav" href="/ordenes">
-              Ordenes
-            </Link>
-          </li>
+         
           <li>
             <Link className="linkNav" href="/ventas">
               Ventas
@@ -131,9 +127,10 @@ function Nav() {
           </li>
           <li style={{ height: "2%" }}></li>
           <li>
-            <span style={{ marginLeft: "25%" }}>
-              <img src={logoSrc} alt="login form" width={60} />
-            </span>
+          <Link href="https://patrillacomunicaciones.com/#contact" target="_blank"> 
+             <span style={{ marginLeft: "25%" }}>
+            <img src={logoSrc} alt="login form" width={60} />
+            </span></Link>
           </li>
         </ul>
       </nav>

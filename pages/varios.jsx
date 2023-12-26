@@ -97,75 +97,8 @@ export default function Varios({ notes }) {
             style={{ textDecoration: "none", color: "white" }}
           />
         </div>
-        <div style={{ marginLeft: "auto", marginRight: "8px" }}>
-          <Link href="/currentAccount">
-            <button className="btn btn-info" style={{ color: "white" }}>
-              Cuentas Corrientes{" "}
-              <EditNoteIcon
-                style={{ textDecoration: "none", color: "white" }}
-              />
-            </button>
-          </Link>
-        </div>
-        <div style={{ marginRight: "8px" }}>
-          <Link href="/technicalreport">
-            <button className="btn btn-dark">
-              Informes <NoteAltIcon />
-            </button>
-          </Link>
-        </div>
-
-        <div style={{ marginRight: "8px" }}>
-          <Link href="/presupuestos">
-            <button className="btn btn-primary">
-              Presupuestos <BorderColorIcon />
-            </button>
-          </Link>
-        </div>
-        <div style={{ marginRight: "8px" }}>
-          <Link href="/account">
-            <button className="btn btn-secondary">
-              Cuentas
-              <InventoryIcon style={{ marginLeft: "3px" }} />
-            </button>
-          </Link>
-        </div>
-        <div
-          style={{ marginRight: "8px", textDecoration: "none", color: "white" }}
-        >
-          <Link
-            href="/radio"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            <button
-              className="btn btn"
-              style={{
-                backgroundColor: "#198754ad",
-                color: "whithe",
-                textDecoration: "none",
-              }}
-            >
-              <span style={{ textDecoration: "none", color: "white" }}>
-                Radios
-              </span>
-              <RadioIcon
-                style={{
-                  marginLeft: "3px",
-                  textDecoration: "none",
-                  color: "white",
-                }}
-              />
-            </button>
-          </Link>
-        </div>
-        <div style={{ marginRight: "8px" }}>
-          <Link href="/parts">
-            <button className="btn btn-warning" style={{ color: "white" }}>
-              Repuestos <BuildIcon style={{ color: "white" }} />
-            </button>
-          </Link>
-        </div>
-        <div>
+      
+        <div style={{marginLeft:"auto"}}>
           <Link href="/sotckOrders">
             <button className="btn btn-danger">
               Pedidos
