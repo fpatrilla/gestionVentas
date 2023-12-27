@@ -6,16 +6,16 @@ import { useRouter } from "next/router";
 import CheqModal from "../components/CheqModal";
 import dbConnect from "../lib/dbConnect";
 import Company from "../models/Company";
-import CurrentAccountModal from "../components/CurrentAccountModal";
+
 
 // material icons
 import StoreIcon from "@mui/icons-material/Store";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import SubtitlesIcon from "@mui/icons-material/Subtitles";
-import EditNoteIcon from "@mui/icons-material/EditNote";
+
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+
 
 export default function NewSale(companys) {
   const [salesModalIsOpen, setSalesModalIsOpen] = useState(false);

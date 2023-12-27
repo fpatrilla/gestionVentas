@@ -11,7 +11,7 @@ import DomainAddIcon from "@mui/icons-material/DomainAdd";
 export default function CompanyPage({ companys }) {
   return (
     <div>
-      <div>
+      <div style={{display:"flex"}}>
         <div className="title-container">
           {" "}
           <h1>
@@ -28,8 +28,22 @@ export default function CompanyPage({ companys }) {
             />
           </h1>
         </div>
-        <hr></hr>
+        <div style={{marginLeft:"auto"}}>
+        {companys.length === 0 && (
+                    <button
+                      className="btn btn-secondary"
+                      style={{ color: "white" }}
+                    >
+                      <Link href="/newCompany">
+                        <DomainAddIcon style={{ color: "white" }} />{" "}
+                      </Link>
+                    </button>
+                  )}
+
+        </div>
+        
       </div>
+      <hr></hr>
       <div style={{ width: "100%" }}>
         <button className="btn btn-secondary">
           <a
@@ -57,17 +71,7 @@ export default function CompanyPage({ companys }) {
                   <h5 className="card-title">Empresa: {company.companyname}</h5>
                 </div>
                 <div style={{ marginLeft: "10%" }}>
-                  {companys.length === 0 && (
-                    <button
-                      className="btn btn-secondary float-end"
-                      style={{ color: "white" }}
-                    >
-                      <Link href="/newCompany">
-                        <DomainAddIcon style={{ color: "white" }} />{" "}
-                      </Link>
-                    </button>
-                  )}
-
+                  
                   <Link
                     href="/[id]/editCompany"
                     as={`/${company._id}/editCompany`}
